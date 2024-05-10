@@ -1,0 +1,23 @@
+symfony new project --webapp                                  --> creation du project
+.env DATABASE_URL="mysql://root:@127.0.0.1:3306/databaseName" --> configuration base de donnee
+php bin/console doctrine:database:create                      --> creation base de donnee
+
+php bin/console make:user                                     --> creation utilisateur
+
+php bin/console make:migration                                --> migration de donnee 1
+php bin/console doctrine:migrations:migrate                   --> migration de donnee 2
+
+php bin/console make:entity post                              --> creation la table poste
+
+php bin/console make:migration                                --> migration de donnee 1
+php bin/console doctrine:migrations:migrate                   --> migration de donnee 2
+
+php bin/console make:auth                                     --> creation page de connexion 
+php bin/console make:registration                             --> creation page d'inscription
+
+php bin/console make:controller                               --> creation controller page
+
+symfony server:start                                          --> demarage serveur local
+
+
+bootstrap cdn
